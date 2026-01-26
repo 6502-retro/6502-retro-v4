@@ -1,9 +1,9 @@
-# 6502-Retro! V4
+# 6502-Retro! V4.1
 
-![6502-Retro-V4](./hardware/6502-retro-v4.png)
+![6502-Retro-V4.1](./hardware/6502-retro-v4.1.png)
 
 Continuing on from the 6502-Retro-V3-Banked SBC, this board now includes
-additional IO in the form of a SPI bus carrying the SDCard interface and 3
+additional IO in the form of a SPI bus carrying the SDCard interface and 2
 additional SPI select lines.  There is also an additional 65C22 VIA with all of
 its handshaking and port A and B pins brought out to a pin header.
 
@@ -12,7 +12,7 @@ controlled by the bottom 6 bits of the bank latch with the 7th bit used to
 select between two rom banks and the 8th bit used to disable the ROM thus
 enabling RAM in its place.
 
-- Schematic: [6502-retro-v4.pdf](./hardware/6502-retro-v4.pdf)
+- Schematic: [6502-retro-v4.1.pdf](./hardware/6502-retro-v4.1.pdf)
 
 
 ## Memory
@@ -39,7 +39,6 @@ enabling RAM in its place.
 | 0xBF30  | IO- VIA2 / Peripheral IO                    |
 | 0xBF40  | IO- VDP/ TMS9918A Clone                     |
 | 0xBF50  | IO- JSEN/ Joy Stick                         |
-| 0xBF60  | IO- SNEN/ SN76489                           |
 | 0xBFxx  | RESERVED IO / Unused                        |
 | 0xC000  | HIGH/ BANKED RAM/ 64 x 8kb banks ram        |
 | 0xE000  | ROM/ 8KB ROM                                |
@@ -56,3 +55,8 @@ CERN-OHL-S v2.0 or later. You may redistribute and modify this source and make
 products using it under the terms of the CERN-OHL-S v2.0
 [https://ohwr.org/cern_ohl_s_v2.txt](./LICENSE.md).
 
+## Revision History
+
+- v4.0 - Initial revision
+- v4.1 - Fix SN76489 Audio Chip.  /SNWE must be driven by VIA, SNREADY requires
+  2.2k pullup.
