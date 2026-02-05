@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "6502-Retro!")
-		(date "2026-01-26")
-		(rev "4.1")
+		(date "2026-02-05")
+		(rev "4.2")
 	)
 	(lib_symbols
 		(symbol "65xx:6551"
@@ -13709,12 +13709,6 @@
 		(uuid "c36b6572-4848-4042-bc51-65a7abf55098")
 	)
 	(junction
-		(at 382.27 33.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cb0bea39-3ab2-4e84-b09a-361800be4865")
-	)
-	(junction
 		(at 355.6 204.47)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13781,16 +13775,16 @@
 		(uuid "ea4df7ad-8c9d-48be-8ae1-8f662f987204")
 	)
 	(junction
+		(at 382.27 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eaa9cc42-4a3b-4eb0-96ff-7ac6faadf4f2")
+	)
+	(junction
 		(at 335.28 196.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ed644211-8036-4f04-b8e3-84bd5f0c14ef")
-	)
-	(junction
-		(at 382.27 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f7b649cc-da58-48cc-a263-4148511b22da")
 	)
 	(no_connect
 		(at 55.88 189.23)
@@ -13898,7 +13892,7 @@
 	)
 	(wire
 		(pts
-			(xy 382.27 21.59) (xy 382.27 25.4)
+			(xy 382.27 21.59) (xy 382.27 22.86)
 		)
 		(stroke
 			(width 0)
@@ -23624,7 +23618,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "W65C22NxP"
+		(property "Value" "W65C22S"
 			(at 89.7733 199.39 0)
 			(effects
 				(font
@@ -24922,7 +24916,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "W65C22NxP"
+		(property "Value" "W65C22S"
 			(at 40.2433 199.39 0)
 			(effects
 				(font
@@ -27346,7 +27340,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AS6C4008-55PCN"
+		(property "Value" "AS6C4008"
 			(at 172.3233 38.1 0)
 			(effects
 				(font
@@ -28005,7 +27999,7 @@
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85f1a160-443b-448e-8237-53abe8be3dc9")
@@ -28027,7 +28021,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Symbol:OSHW-Logo_5.7x6mm_SilkScreen"
 			(at 330.2 233.68 0)
 			(effects
 				(font
@@ -28148,7 +28142,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "AS6C4008-55PCN"
+		(property "Value" "AS6C4008"
 			(at 214.2333 38.1 0)
 			(effects
 				(font
@@ -28736,16 +28730,16 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 387.35 27.94 0)
+		(at 387.35 30.48 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9a70b667-422f-4d9a-b164-cad56e80bfb9")
 		(property "Reference" "J9"
-			(at 389.89 27.9399 0)
+			(at 389.89 30.4801 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28754,7 +28748,7 @@
 			)
 		)
 		(property "Value" "USB-C Adapter"
-			(at 389.89 30.4799 0)
+			(at 389.89 27.9401 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28763,7 +28757,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical"
-			(at 387.35 27.94 0)
+			(at 387.35 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28772,7 +28766,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 387.35 27.94 0)
+			(at 387.35 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28781,7 +28775,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 387.35 27.94 0)
+			(at 387.35 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30517,7 +30511,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "W65C02SxP"
+		(property "Value" "W65C02S"
 			(at 73.2633 30.48 0)
 			(effects
 				(font
