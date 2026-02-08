@@ -1,6 +1,6 @@
 # 6502-Retro! V4.1
 
-![6502-Retro-V4.2](./hardware/6502-retro-v4.2.png)
+![6502-Retro-V4.3](./hardware/6502-retro-v4.3.png)
 
 Continuing on from the 6502-Retro-V3-Banked SBC, this board now includes
 additional IO in the form of a SPI bus carrying the SDCard interface and 2
@@ -12,7 +12,7 @@ controlled by the bottom 6 bits of the bank latch with the 7th bit used to
 select between two rom banks and the 8th bit used to disable the ROM thus
 enabling RAM in its place.
 
-- Schematic: [6502-retro-v4.2.pdf](./hardware/6502-retro-v4.2.pdf)
+- Schematic: [6502-retro-v4.3.pdf](./hardware/6502-retro-v4.3.pdf)
 
 
 ## Memory
