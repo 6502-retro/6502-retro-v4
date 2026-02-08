@@ -1,4 +1,4 @@
-# 6502-Retro! V4.1
+# 6502-Retro! V4.3
 
 ![6502-Retro-V4.3](./hardware/6502-retro-v4.3.png)
 
@@ -39,7 +39,10 @@ enabling RAM in its place.
 | 0xBF30  | IO- VIA2 / Peripheral IO                    |
 | 0xBF40  | IO- VDP/ TMS9918A Clone                     |
 | 0xBF50  | IO- JSEN/ Joy Stick                         |
-| 0xBFxx  | RESERVED IO / Unused                        |
+| 0xBF60  | IO- EXPANSION 1                             |
+| 0xBF70  | IO- EXPANSION 2                             |
+| 0xBF80- | IOCSH - On Expansion Bus                    |
+| 0xBFF0  |                                             |
 | 0xC000  | HIGH/ BANKED RAM/ 64 x 8kb banks ram        |
 | 0xE000  | ROM/ 8KB ROM                                |
 | 0xFFFA  | VECTORS/ HW vectors                         |
@@ -60,3 +63,5 @@ products using it under the terms of the CERN-OHL-S v2.0
 - v4.0 - Initial revision
 - v4.1 - Fix SN76489 Audio Chip.  /SNWE must be driven by VIA, SNREADY requires
   2.2k pullup.
+- v4.2 - Fix Power orientation on USB-C Adapter
+- V4.3 - Larger board, memory decoder includes A7 address line, two expansion slots.
