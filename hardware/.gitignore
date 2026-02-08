@@ -1,2 +1,4 @@
-6502-retro-v4-backups/*
+**/*.zip
 production/*
+**/*Zone.Identifier
+**/*.lck
