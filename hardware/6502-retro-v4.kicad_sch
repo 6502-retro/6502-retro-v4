@@ -6,7 +6,7 @@
 	(paper "A3")
 	(title_block
 		(title "6502-Retro!")
-		(date "2026-02-05")
+		(date "2026-02-15")
 		(rev "4.3")
 	)
 	(lib_symbols
@@ -18043,6 +18043,16 @@
 	)
 	(wire
 		(pts
+			(xy 336.55 78.74) (xy 336.55 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a46ff3f-94ab-4eaa-babd-ca8c90b7534d")
+	)
+	(wire
+		(pts
 			(xy 58.42 212.09) (xy 48.26 212.09)
 		)
 		(stroke
@@ -19083,6 +19093,16 @@
 	)
 	(wire
 		(pts
+			(xy 367.03 87.63) (xy 382.27 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75acbf80-923a-41ae-bec4-b6bbfefd6a33")
+	)
+	(wire
+		(pts
 			(xy 194.31 60.96) (xy 199.39 60.96)
 		)
 		(stroke
@@ -19790,16 +19810,6 @@
 			(type default)
 		)
 		(uuid "931ac3fe-abc4-4628-a804-37e2c4798942")
-	)
-	(wire
-		(pts
-			(xy 372.11 87.63) (xy 382.27 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93833a21-d521-4295-a6c9-910967ac8f65")
 	)
 	(wire
 		(pts
@@ -21163,6 +21173,16 @@
 	)
 	(wire
 		(pts
+			(xy 336.55 87.63) (xy 351.79 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca5593f5-0168-4da1-9506-08c63b2bfabe")
+	)
+	(wire
+		(pts
 			(xy 144.78 53.34) (xy 139.7 53.34)
 		)
 		(stroke
@@ -21320,6 +21340,16 @@
 			(type default)
 		)
 		(uuid "d0720b8c-9624-47a1-bdaa-71f796ab3073")
+	)
+	(wire
+		(pts
+			(xy 367.03 78.74) (xy 367.03 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d08642f4-3bc6-45ff-bebe-752df820b4ec")
 	)
 	(wire
 		(pts
@@ -21640,16 +21670,6 @@
 			(type default)
 		)
 		(uuid "de537048-ee25-457f-9196-9c58610cf4f7")
-	)
-	(wire
-		(pts
-			(xy 341.63 87.63) (xy 351.79 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de9d13ad-79c5-4688-a09a-c42080abfc4a")
 	)
 	(wire
 		(pts
@@ -27921,6 +27941,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 367.03 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0e6ba29a-b400-43fd-8d18-93ad45628763")
+		(property "Reference" "R6"
+			(at 363.22 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3.9K"
+			(at 361.188 84.074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 365.252 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 367.03 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 367.03 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "17d86379-04b4-4e4f-8c9d-5d4d96cb89a2")
+		)
+		(pin "1"
+			(uuid "31e767f1-8564-48b2-b18d-83f0e9659280")
+		)
+		(instances
+			(project "6502-retro-v4"
+				(path "/6017f137-4ced-4437-b23f-1f1da765d757"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "productiondave:F18A")
 		(at 278.13 222.25 0)
 		(unit 1)
@@ -29130,7 +29219,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 340.36 77.47 270)
+		(at 340.36 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -29138,7 +29227,7 @@
 		(dnp no)
 		(uuid "27f6ac2d-ad1f-4f94-8ed6-6275b30e3530")
 		(property "Reference" "#PWR059"
-			(at 334.01 77.47 0)
+			(at 340.36 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -29147,7 +29236,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 335.28 77.47 90)
+			(at 340.36 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32356,6 +32445,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 336.55 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7fba0bec-dd3b-4430-bbef-502e8f199dbb")
+		(property "Reference" "R5"
+			(at 332.74 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3.9K"
+			(at 330.708 84.074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal"
+			(at 334.772 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 336.55 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 336.55 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e0e2e5a8-7393-47f8-8884-770e4fa955be")
+		)
+		(pin "1"
+			(uuid "b729fc5d-2f5b-4176-848b-a625a7e9a1ad")
+		)
+		(instances
+			(project "6502-retro-v4"
+				(path "/6017f137-4ced-4437-b23f-1f1da765d757"
+					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_02x12_Odd_Even")
 		(at 125.73 231.14 0)
 		(unit 1)
@@ -34215,7 +34373,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 370.84 77.47 270)
+		(at 370.84 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -34223,7 +34381,7 @@
 		(dnp no)
 		(uuid "a356df75-d2e4-4e03-a2c2-8c6ba4f7b2f7")
 		(property "Reference" "#PWR067"
-			(at 364.49 77.47 0)
+			(at 370.84 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34232,7 +34390,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 365.76 77.47 90)
+			(at 370.84 82.55 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -36057,6 +36215,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 336.55 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9382618-1a6f-41de-8b0e-f6edef367672")
+		(property "Reference" "#PWR076"
+			(at 336.55 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 336.55 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 336.55 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 336.55 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 336.55 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f13c23d3-c5bc-46a7-869d-9d0e76f3335c")
+		)
+		(instances
+			(project "6502-retro-v4"
+				(path "/6017f137-4ced-4437-b23f-1f1da765d757"
+					(reference "#PWR076")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "74xx:74HC273")
 		(at 171.45 143.51 0)
 		(unit 1)
@@ -36610,6 +36834,72 @@
 			(project "6502-retro-v4"
 				(path "/6017f137-4ced-4437-b23f-1f1da765d757"
 					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 367.03 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d178b408-9bf9-4c33-82d0-94028753fe87")
+		(property "Reference" "#PWR077"
+			(at 367.03 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 367.03 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 367.03 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 367.03 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 367.03 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8ed3568d-37c9-4ea6-adee-d5a915b00601")
+		)
+		(instances
+			(project "6502-retro-v4"
+				(path "/6017f137-4ced-4437-b23f-1f1da765d757"
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
