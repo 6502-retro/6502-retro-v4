@@ -14,10 +14,12 @@ enabling RAM in its place.
 
 - Schematic: [6502-retro-v4.3.pdf](./hardware/6502-retro-v4.3.pdf)
 
-
 ## Memory
 
 ### Memory Bank Latch
+
+Memory map is decoded with an ATF22V10 PLD.  Equations for which are found
+here: [6502retrov4mem.pld](./pld/memdec/6502retrov4mem.pld)
 
 - MSB of RAM BANK LATCH is ROMSW.
 - PLD enables ROM (ROMEN=0) when ROMSW=0.
@@ -48,6 +50,14 @@ enabling RAM in its place.
 | 0xFFFA  | VECTORS/ HW vectors                         |
 | 0xFFFF  | END OF ALL MEMORY                           |
 
+## IRQ
+
+There are 6 possible IRQ sources which are combined to a single /IRQ signal to
+the CPU.  For convenience, a 16V8 GAL was used to perform this function.  The
+equations for which are found here:
+[6502-retro-v4-irq.pld](./pld/irq/6502-retro-v4-irq.pld)
+
+This is not a priority encoder.
 
 ## License
 
@@ -64,4 +74,7 @@ products using it under the terms of the CERN-OHL-S v2.0
 - v4.1 - Fix SN76489 Audio Chip.  /SNWE must be driven by VIA, SNREADY requires
   2.2k pullup.
 - v4.2 - Fix Power orientation on USB-C Adapter
-- V4.3 - Larger board, memory decoder includes A7 address line, two expansion slots.
+- V4.3 - Larger board, memory decoder includes A7 address line, two expansion
+  slots, pullups on expansion slot IRQ lines.
+
+<!-- vim: set tw=80 cc=80: -->
