@@ -1,9 +1,9 @@
 Name     IRQ_16V8 ;
 PartNo   GAL16V8 ;
-Date     08/02/2026 ;
+Date     02/08/2026 ;
 Revision 01 ;
-Designer Engineer ;
-Company  productiondave ;
+Designer David Latham ;
+Company  Logic ;
 Assembly None ;
 Location None ;
 Device   G16V8 ;
