@@ -2,6 +2,11 @@
 
 ![6502-Retro-V4.3](./hardware/6502-retro-v4.3.png)
 
+
+## ERRATA
+
+See: [Errata](./ERRATA.md)
+
 Continuing on from the 6502-Retro-V3-Banked SBC, this board now includes
 additional IO in the form of a SPI bus carrying the SDCard interface and 2
 additional SPI select lines.  There is also an additional 65C22 VIA with all of
