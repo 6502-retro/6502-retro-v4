@@ -1,5 +1,9 @@
 # ERRATA
 
+## V4.4
+
+_None found yet. I have not had this version made yet._
+
 ## V4.3
 
 Version of V4.3 of this board has some significant bugs as well as some lessor
