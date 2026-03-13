@@ -1,6 +1,6 @@
 # 6502-Retro! V4.3
 
-![6502-Retro-V4.3](./hardware/6502-retro-v4.3.png)
+![6502-Retro-V4.4](./hardware/6502-retro-v4.4.png)
 
 
 ## ERRATA
@@ -17,7 +17,7 @@ controlled by the bottom 6 bits of the bank latch with the 7th bit used to
 select between two rom banks and the 8th bit used to disable the ROM thus
 enabling RAM in its place.
 
-- Schematic: [6502-retro-v4.3.pdf](./hardware/6502-retro-v4.3.pdf)
+- Schematic: [6502-retro-v4.4.pdf](./hardware/6502-retro-v4.4.pdf)
 
 ## Memory
 
